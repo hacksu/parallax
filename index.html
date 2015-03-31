@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Parallax</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Behavioral Meta Data -->
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div id="container" class="container">
+      <ul id="scene" class="scene">
+        <li class="layer" data-depth="0.00"><div class="one"></div></li>
+        <li class="layer" data-depth="0.20"><div class="two"></div></li>
+        <li class="layer" data-depth="0.40"><div class="three"></div></li>
+        <li class="layer" data-depth="0.60"><div class="four"></div></li>
+        <li class="layer" data-depth="0.80"><div class="five"></div></li>
+        <li class="layer" data-depth="1.00"><div class="six"></div></li>
+      </ul>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script>
+      $("#scene").parallax();
+    </script>
+
+  </body>
+</html>
